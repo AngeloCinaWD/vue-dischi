@@ -11,11 +11,12 @@
       <!-- contenitore app -->
       <div id="app">
         <div v-for="disco in dischi" class="album">
-
-          <span >{{disco.title}} <br> </span>
-          <span >{{disco.author}} <br> </span>
-          <span >{{disco.genre}} <br> </span>
-          <span >{{disco.year}} <br> </span>
+          <div id="copertina">
+            <img :src="disco.poster" alt="">
+          </div>
+          <span class="white">{{disco.title}} <br> </span>
+          <span class="grey">{{disco.author}} <br> </span>
+          <span class="grey">{{disco.year}} <br> </span>
 
         </div>
       </div>
