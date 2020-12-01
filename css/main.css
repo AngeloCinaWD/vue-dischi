@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #748389;
+}
+
+#app {
+  display: flex;
+  justify-content: flex-start;
+}
+.album {
+  background-color: #6b6e6c;
+  width: 200px;
+  height: 400px;
+}
