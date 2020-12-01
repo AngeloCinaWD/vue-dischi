@@ -10,7 +10,19 @@
     <body>
       <!-- contenitore app -->
       <div id="app">
-        <div v-for="disco in dischi" class="album">
+        <div id="selezione">
+          <span>Seleziona il genere musicale</span>
+          <select v-model="selected">
+            <option value="">All</option>
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Metal">Metal</option>
+          </select>
+        </div>
+
+
+        <div v-for="disco in dischi" class="album" v-if="disco.genre.includes(selected)">
           <div id="copertina">
             <img :src="disco.poster" alt="">
           </div>

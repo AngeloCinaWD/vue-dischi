@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #1e2d3b;
+}
+
+.grey {
+  color: #7c7c7d;
+  font-size: 12px;
+}
+
+.white {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: auto;
+}
+
+#selezione {
+  width: 100%;
+  text-align: right;
+}
+
+.album {
+  background-color: #2e3a46;
+  width: calc(100% / 4 - 30px);
+  text-align: center;
+  margin: 15px 15px;
+  padding: 15px 0;
+}
+
+.album span {
+  display: inline-block;
+  width: 75%;
+}
+
+.album span:first-of-type {
+  margin: 15px 0;
+}
+
+#copertina {
+  width: 75%;
+  margin: auto;
+}
+
+#copertina img {
+  width: 100%;
+  height: auto;
+}
