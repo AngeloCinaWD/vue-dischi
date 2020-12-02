@@ -6,10 +6,11 @@ var app = new Vue ({ //instanzio vue
   mounted: function () {
     axios.get('https://flynn.boolean.careers/exercises/api/array/music')
     .then(risposta => { //con arrow function
-      risposta.data.response.forEach((element) => {
-        this.dischi.push({poster: element.poster, title: element.title, author: element.author, genre: element.genre, year: element.year})
-      });
+      // risposta.data.response.forEach((element) => {
+      //   this.dischi.push({poster: element.poster, title: element.title, author: element.author, genre: element.genre, year: element.year})
+      // });
+      this.dischi = risposta.data.response;
     });
-    console.log(this.dischi);
+    // console.log(this.dischi);
   }
 });
